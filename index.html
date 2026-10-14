@@ -95,6 +95,9 @@
             border-radius: 12px;
             padding: 2rem;
             transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .about-card:hover, .project-card:hover {
@@ -112,6 +115,29 @@
             color: var(--accent-color);
             margin-bottom: 0.8rem;
             font-size: 1.4rem;
+        }
+
+        .project-card p {
+            margin-bottom: 1.5rem;
+            color: #8b949e;
+        }
+
+        .project-link {
+            align-self: flex-start;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            background-color: #21262d;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-link:hover {
+            background-color: var(--border-color);
+            border-color: var(--accent-color);
         }
 
         .skills-list {
@@ -170,18 +196,43 @@
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
+                
+                <!-- Force and Energy Calculator -->
                 <div class="project-card">
-                    <h3>Student Grade Calculator</h3>
-                    <p>A smart utility application built to seamlessly manage, compute, and format student scores and academic results with precision.</p>
+                    <div>
+                        <h3>Force & Energy Calculator</h3>
+                        <p>A Python-based physical calculation tool designed to compute force, kinetic energy, potential energy, and work with high accuracy.</p>
+                    </div>
+                    <a href="https://github.com/lomeklit3-cyber" target="_blank" class="project-link">View Code &rarr;</a>
                 </div>
+
+                <!-- Student Grade Calculator -->
                 <div class="project-card">
-                    <h3>Expense Tracker</h3>
-                    <p>A functional tracking tool designed to log personal expenses, categorize budgets, and monitor financial transactions cleanly.</p>
+                    <div>
+                        <h3>Student Grade Calculator</h3>
+                        <p>A smart utility application built to seamlessly manage, compute, and format student scores and academic results with precision.</p>
+                    </div>
+                    <a href="https://github.com/lomeklit3-cyber" target="_blank" class="project-link">View Code &rarr;</a>
                 </div>
+
+                <!-- Expense Tracker -->
                 <div class="project-card">
-                    <h3>Custom Portfolio Website</h3>
-                    <p>This responsive, dark-themed personal website hosted live directly via GitHub Pages to showcase my developer profile.</p>
+                    <div>
+                        <h3>Expense Tracker</h3>
+                        <p>A functional tracking tool designed to log personal expenses, categorize budgets, and monitor financial transactions cleanly.</p>
+                    </div>
+                    <a href="https://github.com/lomeklit3-cyber" target="_blank" class="project-link">View Code &rarr;</a>
                 </div>
+
+                <!-- Custom Portfolio Website -->
+                <div class="project-card">
+                    <div>
+                        <h3>Custom Portfolio Website</h3>
+                        <p>This responsive, dark-themed personal website hosted live directly via GitHub Pages to showcase my developer profile.</p>
+                    </div>
+                    <a href="https://github.com/lomeklit3-cyber/Meklit-lo.github.lo" target="_blank" class="project-link">Repository &rarr;</a>
+                </div>
+
             </div>
         </section>
     </div>
